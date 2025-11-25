@@ -53,7 +53,7 @@ fi
 # Ensure you choose the correct config (V1000 is common for PolarFire SoC).
 
 if [ -f $PRE_TFLITE ]; then
-     echo "Generating VNNX for V1000 configuration..."
+     echo "Generating VNNX for V500 configuration..."
      vnnx_compile -c V500 -t $PRE_TFLITE -o model_cardboard.vnnx
      echo "VNNX generation complete: model_cardboard.vnnx"
  fi
